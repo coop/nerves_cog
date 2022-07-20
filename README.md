@@ -1,21 +1,29 @@
 # NervesCog
 
-**TODO: Add description**
+Launch Cog inside a running weston instance.
+
+This project works very well with
+[nerves_weston](https://github.com/coop/nerves_weston) but should work equally
+well with a different wayland compositor.
+
+NOTE: The current implementation assumes you are wanting to run cog using a
+wayland compositor. Although cog allows swapping backends that functionality is
+not exposed today.
+
+## Usage
+
+```elixir
+{NervesCog, url: "http://localhost:4000", xdg_runtime_dir: "/tmp/nerves_weston", wayland_display: "wayland-1", name: :cog}
+```
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `nerves_cog` to your list of dependencies in `mix.exs`:
+Include `nerves_cog` in your dependencies referencing `github`:
 
 ```elixir
 def deps do
   [
-    {:nerves_cog, "~> 0.1.0"}
+    {:nerves_cog, github: "coop/nerves_cog"}
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/nerves_cog>.
-

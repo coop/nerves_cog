@@ -1,0 +1,4 @@
+%{
+  "elixir_make": {:hex, :elixir_make, "0.6.3", "bc07d53221216838d79e03a8019d0839786703129599e9619f4ab74c8c096eac", [:mix], [], "hexpm", "f5cbd651c5678bcaabdbb7857658ee106b12509cd976c2c2fca99688e1daf716"},
+  "muontrap": {:hex, :muontrap, "1.0.0", "53a05c37f71cc5070aaa0858a774ae1f500160b7186a70565521a14ef7843c5a", [:make, :mix], [{:elixir_make, "~> 0.6", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm", "0d3cd6e335986f9c2af1b61f583375b0f0d91cea95b7ec7bc720f330b4dc9b49"},
+}
