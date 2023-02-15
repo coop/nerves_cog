@@ -21,7 +21,8 @@ defmodule NervesCog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:muontrap, "~> 1.0.0"}
+      {:muontrap, "~> 1.2.0"},
+      {:nimble_options, "~> 0.5.0"}
     ]
   end
 end

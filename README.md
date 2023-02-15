@@ -13,7 +13,17 @@ not exposed today.
 ## Usage
 
 ```elixir
-{NervesCog, url: "http://localhost:4000", xdg_runtime_dir: "/tmp/nerves_weston", wayland_display: "wayland-1", name: :cog}
+{NervesCog,
+ url: "http://localhost:4000",
+ xdg_runtime_dir: "/tmp/nerves_weston",
+ wayland_display: "wayland-1",
+ cli_args: [
+   # see cog --help-all for available options
+ ],
+ daemon_opts: [
+   # options passed to MuonTrap.Daemon
+ ],
+ name: :cog}
 ```
 
 ## Installation
